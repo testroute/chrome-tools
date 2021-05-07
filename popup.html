@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popup</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Microsoft Yahei';
+            width: 700px;
+            height: 200px;
+        }
+
+        a {
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <h2>快速发布</h2>
+    <div>
+
+        <form class="pull-right search-bar1" method="get" action="#!" role="form" :model="searchForm">
+            <label>应用标识</label>
+            <input type="text" value="" name="keyword"
+                   placeholder="请输入应用标识-支持模糊查询"
+                   style="width: 200px;height: 28px;" v-model="searchForm.appName" >
+            <button type="button" id="query" value="查询" style="float:right" @click="query">查询</button>
+        </form>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td style="width: 100px">
+                    系统名称
+                </td>
+
+                <td style="width: 150px">
+                    应用标识
+                </td>
+                <td style="width: 80px">
+                    当前分支
+                </td>
+                <td style="width: 80px">
+                    部署状态
+                </td>
+                <td style="width: 60px">
+                    终端日志
+                </td>
+                <td style="width: 100px">
+                    获取分支
+                </td>
+                <td style="width: 100px">
+                    选择分支
+                </td>
+                <td style="width: 100px">
+                    操作
+                </td>
+            </tr>
+            <tr v-for="(item,idx) in msg">
+                <td>
+                    {{item.sysName}}
+                </td>
+
+                <td>
+                    {{item.appName}}
+                </td>
+                <td>
+                    {{item.branch}}
+                </td>
+                <td>
+                    <tag v-if="item.deployStatus==1"  style="background-color: red">正在部署</tag>
+                    <tag v-if="item.deployStatus==0"  >未部署</tag>
+                </td>
+                <td>
+                    <div v-for="(urls,index) in item.testNewUrl" :key="index">
+                        <button id="" value="" @click="openUrl(urls)">{{urls.substr(48,4)}}</button>
+                    </div>
+                </td>
+                <td>
+                    <button value="" @click="getBranch(item.gitUrl,idx)">获取分支</button>
+                </td>
+                <td>
+                    <select placeholder="请选择分支" style="width: 130px"   v-model="nextBranch[idx]">
+                        <option label="请选择分支" value=""/>
+                        <option :key="branchNew" :label="branchNew"
+                                   :value="branchNew" v-for="branchNew in branchList[idx]">
+                        </option>
+                    </select>
+                </td>
+                <td>
+                    <button size="mini" type="primary"
+                            @click="quickRelease(item.appId,item.phone,item.upgradeType,item.num,item.branch,item.appName,idx)">
+                        快速发布
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+<script src="js/vue.js"></script>
+<script src="js/axios.min.js"></script>
+<script src="js/popup.js"></script>
+
+</body>
+</html>

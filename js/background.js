@@ -29,6 +29,17 @@ chrome.contextMenus.create({
 
 });
 
+chrome.contextMenus.create({
+    title: '任务通过：%s', // %s表示选中的文字
+    parentId: '0',
+    contexts: ['selection'], // 只有当选中文字时才会出现此右键菜单
+    onclick: function (params) {
+        var no = params.selectionText;
+        window.open("https://www.baidu.com/s?ie=UTF-8&wd=" + no, "百度一下", "");
+
+    }
+
+})
 
 chrome.contextMenus.create({
 

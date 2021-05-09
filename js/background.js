@@ -92,7 +92,7 @@ chrome.contextMenus.create({
             } else {
                 urls = "https://test";
             }
-            window.open(urls + "partner.dmall.com/#index/dmallQA/mqlist:billno=" + no, "MQ日志查询", "");
+            window.open(urls + "" + no, "MQ日志查询", "");
         });
     }
 });
@@ -112,7 +112,7 @@ chrome.contextMenus.create({
             } else {
                 urls = "https://test";
             }
-            window.open(urls + "partner.dmall.com/#index/x_onlinewareprice/storeWareManage:wlbh=" + no, "门店商品查询", "");
+            window.open(urls + "partner.xxx.com/#index/x_onlinewareprice/storeWareManage:wlbh=" + no, "门店商品查询", "");
         });
     }
 });
@@ -132,7 +132,7 @@ chrome.contextMenus.create({
             } else {
                 urls = "https://test";
             }
-            window.open(urls + "partner.dmall.com/#index/ware/waremanager:rfIds=" + no, "商品管理查询", "");
+            window.open(urls + "partner.xxx.com/#index/ware/waremanager:rfIds=" + no, "商品管理查询", "");
         });
     }
 });
@@ -153,7 +153,7 @@ chrome.contextMenus.create({
             } else {
                 urls = "https://test";
             }
-            window.open(urls + "partner.dmall.com/#index/ware/waremanagermodify:rfId=" + no, "补全商品信息", "");
+            window.open(urls + "partner.xxx.com/#index/ware/waremanagermodify:rfId=" + no, "补全商品信息", "");
         });
     }
 });
@@ -173,7 +173,7 @@ chrome.contextMenus.create({
             } else {
                 urls = "https://test";
             }
-            window.open(urls + "partner.dmall.com/#index/depotpartner/stockrecords:billno=" + no, "库存全流程变化查询", "");
+            window.open(urls + "partner.xxx.com/#index/depotpartner/stockrecords:billno=" + no, "库存全流程变化查询", "");
         });
     }
 });
@@ -193,7 +193,7 @@ chrome.contextMenus.create({
             } else {
                 urls = "https://test";
             }
-            window.open(urls + "partner.dmall.com/#index/cxPurchaseinfo/purchaseShopGoods:mantr=" + no, "货源信息查询", "");
+            window.open(urls + "partner.xxx.com/#index/cxPurchaseinfo/purchaseShopGoods:mantr=" + no, "货源信息查询", "");
         });
     }
 });
@@ -213,7 +213,7 @@ chrome.contextMenus.create({
             } else {
                 urls = "https://test";
             }
-            window.open(urls + "partner.dmall.com/#index/cxPurchaseinfo/cxGoodsPurchases:mantr=" + no, "采购信息查询", "");
+            window.open(urls + "partner.xxx.com/#index/cxPurchaseinfo/cxGoodsPurchases:mantr=" + no, "采购信息查询", "");
         });
     }
 });
@@ -233,7 +233,7 @@ chrome.contextMenus.create({
             } else {
                 urls = "https://test";
             }
-            window.open(urls + "partner.dmall.com/#index/cxpomana/cxdatahub/vendor:mantr=" + no, "供应商查询", "");
+            window.open(urls + "partner.xxx.com/#index/cxpomana/cxdatahub/vendor:mantr=" + no, "供应商查询", "");
         });
     }
 });
@@ -254,7 +254,7 @@ chrome.contextMenus.create({
             } else {
                 urls = "https://test";
             }
-            window.open(urls + "partner.dmall.com/#index/invoucher/account:billno=" + no, "库存台账", "");
+            window.open(urls + "partner.xxx.com/#index/invoucher/account:billno=" + no, "库存台账", "");
         });
     }
 });
@@ -273,7 +273,7 @@ chrome.contextMenus.create({
             } else {
                 urls = "https://test";
             }
-            window.open(urls + "partner.dmall.com/#index/invoucher/sheetlist:billno=" + no, "库凭单据明细", "");
+            window.open(urls + "partner.xxx.com/#index/invoucher/sheetlist:billno=" + no, "库凭单据明细", "");
         });
     }
 });
@@ -293,7 +293,7 @@ chrome.contextMenus.create({
             } else {
                 urls = "https://test";
             }
-            window.open(urls + "partner.dmall.com/#index/invoucher/voucher:billno=" + no, "库存凭证", "");
+            window.open(urls + "partner.xxx.com/#index/invoucher/voucher:billno=" + no, "库存凭证", "");
         });
     }
 });
@@ -313,7 +313,7 @@ chrome.contextMenus.create({
             } else {
                 urls = "https://test";
             }
-            window.open(urls + "partner.dmall.com/#index/invoucher/init/initadd:billno=" + no, "库存初始化", "");
+            window.open(urls + "partner.xxx.com/#index/invoucher/init/initadd:billno=" + no, "库存初始化", "");
         });
     }
 });
@@ -335,7 +335,7 @@ chrome.contextMenus.create({
             } else {
                 urls = "https://test";
             }
-            window.open(urls + "partner.dmall.com/#index/dmallQA/wareall:matnr=" + matnr, "商品基本信息", "");
+            window.open(urls + "partner.xxx.com/#index/xxxQA/wareall:matnr=" + matnr, "商品基本信息", "");
         });
     }
 });
@@ -357,7 +357,7 @@ chrome.contextMenus.create({
             } else {
                 urls = "https://test";
             }
-            window.open(urls + "partner.dmall.com/#index/rdp_config_center/detailOutTemplate", "店务配置", "");
+            window.open(urls + "partner.xxx.com/#index/rdp_config_center/detailOutTemplate", "店务配置", "");
         });
     }
 });
@@ -380,7 +380,7 @@ chrome.contextMenus.create({
             } else {
                 urls = "https://test";
             }
-            window.open(urls + "partner.dmall.com/#index/rdp_sms/receiveBill/list", "收货单管理", "");
+            window.open(urls + "partner.xxx.com/#index/rdp_sms/receiveBill/list", "收货单管理", "");
         });
     }
 });
@@ -402,7 +402,7 @@ chrome.contextMenus.create({
             } else {
                 urls = "https://test";
             }
-            window.open(urls + "partner.dmall.com/#index/cxpomana/cxHandsWorkBill", "采购下单", "");
+            window.open(urls + "partner.xxx.com/#index/cxpomana/cxHandsWorkBill", "采购下单", "");
         });
     }
 });
@@ -425,7 +425,7 @@ chrome.contextMenus.create({
                     "businessKey": no.trim(),
                 };
                 $.ajax({
-                    url: "https://testapiqatool-partner.dmall.com/task/taskQuery",
+                    url: "https://testapiqatool-partner.xxx.com/task/taskQuery",
                     type: "POST",
                     data: data,
                     ContentType: "application/json",
@@ -441,7 +441,7 @@ chrome.contextMenus.create({
                                 "id": array[i].id,
                             };
                             $.ajax({
-                                url: "https://testapiqatool-partner.dmall.com/task/completeTask",
+                                url: "https://testapiqatool-partner.xxx.com/task/completeTask",
                                 type: "POST",
                                 data: data1,
                                 ContentType: "application/json",
@@ -472,7 +472,7 @@ chrome.contextMenus.create({
                     "businessKey": no.trim(),
                 };
                 $.ajax({
-                    url: "https://devapiqatool-partner.dmall.com/task/taskQuery",
+                    url: "https://devapiqatool-partner.xxx.com/task/taskQuery",
                     type: "POST",
                     data: data,
                     ContentType: "application/json",
@@ -488,7 +488,7 @@ chrome.contextMenus.create({
                                 "id": array[i].id,
                             };
                             $.ajax({
-                                url: "https://devapiqatool-partner.dmall.com/task/completeTask",
+                                url: "https://devapiqatool-partner.xxx.com/task/completeTask",
                                 type: "POST",
                                 data: data1,
                                 ContentType: "application/json",
@@ -535,7 +535,7 @@ chrome.contextMenus.create({
                     "businessKey": no.trim(),
                 };
                 $.ajax({
-                    url: "https://testapiqatool-partner.dmall.com/task/taskQuery",
+                    url: "https://testapiqatool-partner.xxx.com/task/taskQuery",
                     type: "POST",
                     data: data,
                     ContentType: "application/json",
@@ -551,7 +551,7 @@ chrome.contextMenus.create({
                                 "id": array[i].id,
                             };
                             $.ajax({
-                                url: "https://testapiqatool-partner.dmall.com/task/rejectTask",
+                                url: "https://testapiqatool-partner.xxx.com/task/rejectTask",
                                 type: "POST",
                                 data: data1,
                                 ContentType: "application/json",
@@ -582,7 +582,7 @@ chrome.contextMenus.create({
                     "businessKey": no.trim(),
                 };
                 $.ajax({
-                    url: "https://devapiqatool-partner.dmall.com/task/taskQuery",
+                    url: "https://devapiqatool-partner.xxx.com/task/taskQuery",
                     type: "POST",
                     data: data,
                     ContentType: "application/json",
@@ -598,7 +598,7 @@ chrome.contextMenus.create({
                                 "id": array[i].id,
                             };
                             $.ajax({
-                                url: "https://devapiqatool-partner.dmall.com/task/rejectTask",
+                                url: "https://devapiqatool-partner.xxx.com/task/rejectTask",
                                 type: "POST",
                                 data: data1,
                                 ContentType: "application/json",
@@ -653,7 +653,7 @@ chrome.contextMenus.create({
                 "erpStoreId": 112,
             };
             $.ajax({
-                url: urls + "apiqatool-partner.dmall.com/rdp/addstock",
+                url: urls + "apiqatool-partner.xxx.com/rdp/addstock",
                 type: "POST",
                 data: data,
                 ContentType: "application/json",

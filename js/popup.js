@@ -21,7 +21,7 @@ new Vue({
     methods: {
         //打开测试环境amp地址
         openUrl(urls) {
-            window.open(urls.replace('10.16.244.131:8080', 'testapi-symphony.dmall.com'));
+            window.open(urls.replace('10.16.244.131:8080', 'testapi-symphony.xxx.com'));
             console.log(urls)
         },
         //查询按钮
@@ -33,7 +33,7 @@ new Vue({
             params.append('appId', '');
             params.append('appName', this.searchForm.appName);
             let v = this;
-            axios.post('https://testtoolapi-partner.dmall.com/release/queryApp', params)
+            axios.post('https://testtoolapi-partner.xxx.com/release/queryApp', params)
                 .then(function (response) {
                     v.msg = response.data.data;
                 })
@@ -52,7 +52,7 @@ new Vue({
                 params.append('phone', phone);
                 params.append('branch', this.nextBranch[idx]);
                 params.append('type', "test");
-                axios.post('https://testtoolapi-partner.dmall.com/release/quickRelease', params)
+                axios.post('https://testtoolapi-partner.XXX.com/release/quickRelease', params)
                     .then(function (response) {
                         console.log(response.data.data)
                         alert(response.data.data)
@@ -69,7 +69,7 @@ new Vue({
             params.append('branch', domain);
 
             let v = this;
-            axios.post('https://testtoolapi-partner.dmall.com/release/getGitBranch', params)
+            axios.post('https://testtoolapi-partner.xxxF.com/release/getGitBranch', params)
                 .then(function (response) {
                     v.branchList[idx] = response.data.data;
                     v.$forceUpdate();

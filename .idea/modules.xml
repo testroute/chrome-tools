@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/chrome-dmall-tools.iml" filepath="$PROJECT_DIR$/.idea/chrome-dmall-tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/chrome-tools.iml" filepath="$PROJECT_DIR$/.idea/chrome-tools.iml" />
     </modules>
   </component>
 </project>
